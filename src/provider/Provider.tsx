@@ -1,55 +1,45 @@
-import React, { useState, useEffect, FC, ReactNode} from 'react';
-import PropTypes from 'prop-types';
+import React, { useState, useEffect, ReactNode} from 'react';
 import axios from 'axios';
 import Context from '../context/Context';
-
+import IProducts from '../interfaces/IProducts';
+import IInfoPage from '../interfaces/IInfoPage';
 
 interface Props{
   children?: ReactNode  
 }
 
-interface IProducts {
-  avaliations: number,
-  classification: string,
-  country: string,
-  discount: number,
-  flag: string,
-  id: number,
-  image: string,
-  name: string,
-  price: number,
-  priceMember: number,
-  priceNonMember: number,
-  rating: number
-  region: string,
-  size: string,
-  sommelierComment: string,
-  type: string,
-}
+const Provider = ({ children }: Props) => {
+  const [productsApi, setProductsApi] = useState<IProducts[]>([]);
+  const [products, setProducts] = useState(productsApi);
+  const [infoPage, setInfoPage] = useState<IInfoPage>({ itemsPerPage: 0, page: 0, totalItems: 0, totalPages: 0});
 
- const Provider = ({ children }: Props) => {
-  const [products, setProducts] = useState<IProducts[]>([]);
-  
-
-  const getData = () => {
-    axios.get('https://wine-back-test.herokuapp.com/products?page=1&limit=10')
+  useEffect(() => {
+    axios.get('https://wine-back-test.herokuapp.com/products?page=1&limit=60')
       .then((response) => {
-        const result = response.data.items;
-        setProducts(result);
+        console.log(response);        
+        const { data } = response;
+        const { items, ...infoPage } = data; 
+        setProductsApi(items);
+        const { itemsPerPage, page, totalPages } = infoPage;
+        setInfoPage({ itemsPerPage, page, totalPages, totalItems: 60 });        
       });
-  };
+  }, []);
 
-  useEffect(() => getData(), []);
-
-  console.log(products);
-  
+  useEffect(() => {
+    setProducts(productsApi); 
+  }, [productsApi]);
   
   const myProvider = {
+    productsApi,
+    setProductsApi,
     products,
-  }
+    setProducts,
+    setInfoPage,
+    infoPage,
+  };
 
   return <Context.Provider value={ myProvider }>{children}</Context.Provider>;
-}
+};
  
 
 export default Provider;
