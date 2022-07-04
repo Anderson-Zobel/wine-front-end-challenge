@@ -68,7 +68,6 @@ npm run buid
 ```
 npm run start
 ```
-## 💻 Rodando localmente
 
 <!-- ## 💻 Deploy
  - [Delivery-APP]() -->
