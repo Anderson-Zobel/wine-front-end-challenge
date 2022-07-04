@@ -29,6 +29,7 @@
 
 ## 🏃 Habilidades
 - O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
+- Obs.: todos os estados foram monitorados e manipulados átraves de hooks e Context do Reactjs
 
 1.Catálogo de produtos com paginação
 
