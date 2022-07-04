@@ -12,7 +12,7 @@
 
 ## 🧰 Tecnologias  
 
-**Fullstack**
+**Front-end**
 <div style="display: inline_block"><br>
  
   <img align="center" alt="TS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  />&nbsp;&nbsp;
@@ -29,6 +29,7 @@
 
 ## 🏃 Habilidades
 - O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
+- Obs.: todos os estados foram monitorados e manipulados átraves de hooks e Context do Reactjs
 
 1.Catálogo de produtos com paginação
 
