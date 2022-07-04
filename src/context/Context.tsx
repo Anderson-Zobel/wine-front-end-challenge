@@ -1,8 +1,5 @@
 import { createContext } from 'react';
-
-interface IContext{
-  products: {}
-}
+import IContext from '../interfaces/IContext';
 
 const Context = createContext({} as IContext);
 
