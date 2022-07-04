@@ -12,7 +12,7 @@
 
 ## 🧰 Tecnologias  
 
-**Fullstack**
+**Front-end**
 <div style="display: inline_block"><br>
  
   <img align="center" alt="TS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  />&nbsp;&nbsp;
