@@ -83,8 +83,9 @@ npm run start
 <!-- ## 💻 Deploy
  - [Delivery-APP]() -->
 
-<!-- ## 📺 Preview do Projeto
-![]() -->
+## 📺 Preview do Projeto
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErgvSicCQlI/0.jpg)](https://www.youtube.com/watch?v=ErgvSicCQlI)
+![]() 
 
 ## :+1: Agradecimentos
   - Agradeço pelo desafio trazido pela [Wine](https://www.wine.com.br), sempre é gratificante mostrar a nossa produtividade e exercitar nosso conhecimento, foi extremamente produtivo, desde já agradeço!
