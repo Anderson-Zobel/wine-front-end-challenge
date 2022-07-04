@@ -28,7 +28,8 @@
 
 
 ## 🏃 Habilidades
- - O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
+- O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
+
 1.Catálogo de produtos com paginação
 
 ```
