@@ -110,3 +110,6 @@ export const CardContainer = styled.div`
     margin-bottom: 30px;
   }
 `
+export const Price = styled.span`
+text-decoration: line-through;
+`

@@ -8,6 +8,7 @@ import {
   DetailsText,
   FlagContainer,
   Button,
+  Price,
 } from '../styles/components/card';
 
 
@@ -22,7 +23,7 @@ const Card = ({ product }: ICard ) => {
         <FlagContainer src={product.flag} alt={product.flag}/>
         <CardTitle>{product.name}</CardTitle>
         <DetailsText>
-          <span>R$ {product.price}</span>
+          <Price>R$ {product.price}</Price>
           <em>{product.discount}% OFF</em>
         </DetailsText>
         <DetailsText>
