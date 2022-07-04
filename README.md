@@ -1,6 +1,6 @@
 <div style="display: inline_block"><br>
 
-<img src="https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Logo-Wine-990x640.jpeg?alt=media&token=d07a516f-6880-4c8c-8dea-723f36687d95" alt="alt text" width="50%" height="whatever"> 
+<img src="https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Logo-Wine-990x640.jpeg?alt=media&token=d07a516f-6880-4c8c-8dea-723f36687d95" alt="alt text" width="100%" height="whatever"> 
 
 </div>
 
@@ -28,23 +28,30 @@
 
 
 ## 🏃 Habilidades
- - O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
-  -  Catálogo de produtos com paginação
-    ```
-      Catálogo com 60 produtos e utilizando paginação de 10 produtos por página, requisição de 60 produtos da API.
-    ```
-  -  Filtragem produtos por preço
-    ```
-      Consta filtragem via os radio buttons na parte lateral da página inicial, filtrando por todos os preços especificados.
-    ```
-  -  Busca por nome do produto
-    ```
-      Filtragem atráves de um search input ao clica no ícone de lupa, filtra pelo nome do produto
-    ```
-  -  Adicionar e remover produtos do carrinho(paricalmente)
-    ```
-      Adiciona o produto ao localStorage atráves da página de detalhes de cada produto, ao clicar no adicionar, seta quantidade e altera o número indicando a quantidade no botão do carrinho no canto superior direito.
-    ```
+- O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
+
+1.Catálogo de produtos com paginação
+
+```
+Catálogo com 60 produtos e utilizando paginação de 10 produtos por página, requisição de 60 produtos da API.
+```
+
+2.Filtragem produtos por preço
+ 
+```
+Consta filtragem via os radio buttons na parte lateral da página inicial, filtrando por todos os preços especificados.
+```
+
+3.Busca por nome do produto
+```
+Filtragem atráves de um search input ao clica no ícone de lupa, filtra pelo nome do produto
+```
+
+4.Adicionar e remover produtos do carrinho(paricalmente)
+
+```
+Adiciona o produto ao localStorage atráves da página de detalhes de cada produto, ao clicar no adicionar, seta quantidade e altera o número indicando a quantidade no botão do carrinho no canto superior direito.
+```
 
 ## 💻 Rodando localmente
 
@@ -57,18 +64,20 @@ npm install
 3. Rodando aplicação Nextjs modo DEV.
 
 ```
-  npm run dev 
+npm run dev 
 ```
 
 
-4. Para buildar aplicação e rodar
+<!-- 4. Para buildar aplicação e rodar
+
 ```
 npm run buid
 ```
 ```
 npm run start
 ```
-## 💻 Rodando localmente
+
+-->
 
 <!-- ## 💻 Deploy
  - [Delivery-APP]() -->
