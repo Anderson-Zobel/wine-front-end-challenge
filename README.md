@@ -29,22 +29,28 @@
 
 ## 🏃 Habilidades
  - O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
-  -  Catálogo de produtos com paginação
-    ```
-      Catálogo com 60 produtos e utilizando paginação de 10 produtos por página, requisição de 60 produtos da API.
-    ```
-  -  Filtragem produtos por preço
-    ```
-      Consta filtragem via os radio buttons na parte lateral da página inicial, filtrando por todos os preços especificados.
-    ```
-  -  Busca por nome do produto
-    ```
-      Filtragem atráves de um search input ao clica no ícone de lupa, filtra pelo nome do produto
-    ```
-  -  Adicionar e remover produtos do carrinho(paricalmente)
-    ```
-      Adiciona o produto ao localStorage atráves da página de detalhes de cada produto, ao clicar no adicionar, seta quantidade e altera o número indicando a quantidade no botão do carrinho no canto superior direito.
-    ```
+1.Catálogo de produtos com paginação
+
+```
+Catálogo com 60 produtos e utilizando paginação de 10 produtos por página, requisição de 60 produtos da API.
+```
+
+2.Filtragem produtos por preço
+ 
+```
+Consta filtragem via os radio buttons na parte lateral da página inicial, filtrando por todos os preços especificados.
+```
+
+3.Busca por nome do produto
+```
+Filtragem atráves de um search input ao clica no ícone de lupa, filtra pelo nome do produto
+```
+
+4.Adicionar e remover produtos do carrinho(paricalmente)
+
+```
+Adiciona o produto ao localStorage atráves da página de detalhes de cada produto, ao clicar no adicionar, seta quantidade e altera o número indicando a quantidade no botão do carrinho no canto superior direito.
+```
 
 ## 💻 Rodando localmente
 
@@ -57,11 +63,12 @@ npm install
 3. Rodando aplicação Nextjs modo DEV.
 
 ```
-  npm run dev 
+npm run dev 
 ```
 
 
 4. Para buildar aplicação e rodar
+
 ```
 npm run buid
 ```
