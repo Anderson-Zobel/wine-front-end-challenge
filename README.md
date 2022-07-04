@@ -68,7 +68,7 @@ npm run dev
 ```
 
 
-4. Para buildar aplicação e rodar
+<!-- 4. Para buildar aplicação e rodar
 
 ```
 npm run buid
@@ -76,6 +76,8 @@ npm run buid
 ```
 npm run start
 ```
+
+-->
 
 <!-- ## 💻 Deploy
  - [Delivery-APP]() -->
