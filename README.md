@@ -83,7 +83,7 @@ npm run start
 <!-- ## 💻 Deploy
  - [Delivery-APP]() -->
 
-## 📺 Preview do Projeto
+## 📺 Preview do Projeto (clicando na imagem vai te redirecionar para o vídeo no youtube)
 [![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/ErgvSicCQlI/0.jpg)](https://www.youtube.com/watch?v=ErgvSicCQlI)
 ![]() 
 
