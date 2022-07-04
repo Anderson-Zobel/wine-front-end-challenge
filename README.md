@@ -1,34 +1,84 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div style="display: inline_block"><br>
 
-## Getting Started
+<img src="https://firebasestorage.googleapis.com/v0/b/teste-upload-b324a.appspot.com/o/Logo-Wine-990x640.jpeg?alt=media&token=d07a516f-6880-4c8c-8dea-723f36687d95" alt="alt text" width="50%" height="whatever"> 
 
-First, run the development server:
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
+# Front-end challenge Wine
+
+## 📖 Sobre
+
+- A proposta desse projeto era desenvolver uma aplicação que responde-se ao desafio técnico da [Wine](https://www.wine.com.br), utilizando Nextjs, TypeScript Styled-Components.<br>
+
+## 🧰 Tecnologias  
+
+**Fullstack**
+<div style="display: inline_block"><br>
+ 
+  <img align="center" alt="TS" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"  />&nbsp;&nbsp;
+  <img align="center" alt="NEXT" width="50" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg" />&nbsp;&nbsp;
+  <img align="center" alt="STYLED-COMPONENT" width="50" src="https://styled-components.com/logo.png"/>&nbsp;&nbsp;
+
+</div>
+
+## 👷‍♂️ Desenvolvimento:
+- Desafio Front-end realizado pela [Wine](https://www.wine.com.br)<br>
+- Realizado individualmente
+&ensp;[Anderson Zobel](https://github.com/Anderson-Zobel)<br>
+
+
+## 🏃 Habilidades
+ - O desafio era implementar um e-commerce para venda de vinhos que deveia ter as seguintes funcionalidades:
+  -  Catálogo de produtos com paginação
+    ```
+      Catálogo com 60 produtos e utilizando paginação de 10 produtos por página, requisição de 60 produtos da API.
+    ```
+  -  Filtragem produtos por preço
+    ```
+      Consta filtragem via os radio buttons na parte lateral da página inicial, filtrando por todos os preços especificados.
+    ```
+  -  Busca por nome do produto
+    ```
+      Filtragem atráves de um search input ao clica no ícone de lupa, filtra pelo nome do produto
+    ```
+  -  Adicionar e remover produtos do carrinho(paricalmente)
+    ```
+      Adiciona o produto ao localStorage atráves da página de detalhes de cada produto, ao clicar no adicionar, seta quantidade e altera o número indicando a quantidade no botão do carrinho no canto superior direito.
+    ```
+
+## 💻 Rodando localmente
+
+
+2. Instalação de dependências.
+```
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Rodando aplicação Nextjs modo DEV.
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+```
+  npm run dev 
+```
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+4. Para buildar aplicação e rodar
+```
+npm run buid
+```
+```
+npm run start
+```
+## 💻 Rodando localmente
 
-## Learn More
+<!-- ## 💻 Deploy
+ - [Delivery-APP]() -->
 
-To learn more about Next.js, take a look at the following resources:
+<!-- ## 📺 Preview do Projeto
+![]() -->
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## :+1: Agradecimentos
+  - Agradeço pelo desafio trazido pela [Wine](https://www.wine.com.br), sempre é gratificante mostrar a nossa produtividade e exercitar nosso conhecimento, foi extremamente produtivo, desde já agradeço!
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
