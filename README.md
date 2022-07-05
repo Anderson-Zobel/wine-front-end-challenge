@@ -80,8 +80,8 @@ npm run start
 
 -->
 
-<!-- ## 💻 Deploy
- - [Delivery-APP]() -->
+## 💻 Deploy (basta clicar no link abaixo que vai te levar ao deploy da aplicação)
+ - [Front-end Wine Challenge](https://wine-front-end-challenge.vercel.app) 
 
 ## 📺 Preview do Projeto (clicando na imagem vai te redirecionar para o vídeo no youtube)
 
