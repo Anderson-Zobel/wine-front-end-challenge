@@ -51,9 +51,8 @@ Filtragem através de um search input ao clica no ícone de lupa, filtra pelo no
 4. Adicionar e remover produtos do carrinho(paricalmente)
 
 ```
-Adiciona o produto ao localStorage através da página de detalhes de cada produto, ao clicar no adicionar.
-Utiliza da informação no localStorage(count) para renderizar quantidade e renderiza no ícone na barra de navegação 
-no canto superior direito.
+Adiciona o produto ao localStorage através da página de detalhes de cada produto, ao clicar em 'adicionar'.
+Utiliza a informação no localStorage(count) e renderiza no ícone na barra de navegação no canto superior direito.
 ```
 
 ## 💻 Rodando localmente
