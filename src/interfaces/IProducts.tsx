@@ -11,7 +11,7 @@ export default interface IProducts {
     price: number,
     priceMember: number,
     priceNonMember: number,
-    rating: number
+    rating: number,
     region: string,
     size: string,
     sommelierComment: string,

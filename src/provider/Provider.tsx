@@ -13,6 +13,7 @@ const Provider = ({ children }: Props) => {
   const [products, setProducts] = useState(productsApi);
   const [infoPage, setInfoPage] = useState<IInfoPage>({ itemsPerPage: 0, page: 0, totalItems: 0, totalPages: 0});
 
+
   useEffect(() => {
     axios.get('https://wine-back-test.herokuapp.com/products?page=1&limit=60')
       .then((response) => {
@@ -36,6 +37,7 @@ const Provider = ({ children }: Props) => {
     setProducts,
     setInfoPage,
     infoPage,
+
   };
 
   return <Context.Provider value={ myProvider }>{children}</Context.Provider>;
