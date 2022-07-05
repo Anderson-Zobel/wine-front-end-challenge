@@ -16,8 +16,7 @@ const Provider = ({ children }: Props) => {
 
   useEffect(() => {
     axios.get('https://wine-back-test.herokuapp.com/products?page=1&limit=60')
-      .then((response) => {
-        console.log(response);        
+      .then((response) => {    
         const { data } = response;
         const { items, ...infoPage } = data; 
         setProductsApi(items);
