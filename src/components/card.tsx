@@ -7,7 +7,7 @@ import {
   CardTitle, 
   DetailsText,
   FlagContainer,
-  Button,
+  AButton,
   Price,
 } from '../styles/components/card';
 
@@ -18,7 +18,9 @@ const Card = ({ product }: ICard ) => {
     <div>
       <Container>
         <span>
-          <ImgContainer src={product.image} alt={product.name}/>
+          <Link href={`/products/${product.id}`}>
+            <ImgContainer src={product.image} alt={product.name}/>
+          </Link>
         </span>
         <FlagContainer src={product.flag} alt={product.flag}/>
         <CardTitle>{product.name}</CardTitle>
@@ -35,7 +37,7 @@ const Card = ({ product }: ICard ) => {
         <DetailsText>Não sócio R$ {product.priceNonMember}</DetailsText>
       </Container>
       <Link href={`/products/${product.id}`}>
-        <Button>adicionar</Button>
+        <AButton>adicionar</AButton>
       </Link>
     </div>
   );
