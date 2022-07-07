@@ -34,6 +34,7 @@ width: 198px;
 height: 178px;
 margin: 5px 0;
 height: inherit;
+cursor: pointer;
 `
 
 export const FlagContainer = styled.img` 
@@ -81,7 +82,7 @@ text-transform: uppercase;
   }  
   `
 
-export const Button = styled.button`
+export const AButton = styled.button`
 width: 256px;
 margin-top: 16px;
 height: 39px;
@@ -93,6 +94,18 @@ color: white;
 text-transform: uppercase;
 font-family: Lato;
 font-weight: 700;
+cursor: pointer;
+&:hover {
+  background: #7EBC43;
+  color: #D14B8F;
+  border-bottom: 3px solid #D14B8F;
+}
+&:active {
+  transform: scale(0.95);
+}
+
+
+
 `
 
 export const Article = styled.article`
