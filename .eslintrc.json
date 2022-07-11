@@ -27,13 +27,14 @@
         ],
         "linebreak-style": [
             "error",
-            "unix"
+            "unix",
+            "windows"
         ],
         "quotes": [
             "error",
             "single"
         ],
         "semi": "off", "@typescript-eslint/semi": "off",
-        "react/react-in-jsx-scope":"off"        
+        "react/react-in-jsx-scope":"off"   
     }
 }

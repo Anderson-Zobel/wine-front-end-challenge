@@ -9,38 +9,43 @@ const RadioFilter = () => {
 
 
   const isRadioSelected = (value: string): boolean => selectedRadionBtn === value;
+
+  const filter = (valueOne: number, valueTwo: number): IProducts[] => {
+    return productsApi.filter((product: IProducts) => product.priceNonMember >= valueOne && product.priceNonMember <= valueTwo);
+  }  
+
+  const setStatesFiltered = ( filter: IProducts[] ) => {
+    setInfoPage((prevState) => ({ ...prevState, totalItems: filter.length }));
+    setProducts(filter);    
+  }
   
   const handleRadioClick = (e: React.ChangeEvent<HTMLInputElement>): void =>{
-    setSelectedRadionBtn(e.currentTarget.value);  
-    if (e.target.value === 'radio0') {
-      setInfoPage((prevState) => ({ ...prevState, totalItems: productsApi.length }));
-      setProducts(productsApi);
+    const target = e.currentTarget.value 
+    setSelectedRadionBtn(target); 
+
+    switch (target) {
+    case 'radio0':
+      return setStatesFiltered(productsApi);
+
+    case 'radio1':
+      return setStatesFiltered(filter(0, 40))
+
+    case 'radio2':
+      return setStatesFiltered(filter(40, 60)) 
+
+    case 'radio3':
+      return setStatesFiltered(filter(100, 200))
+
+    case 'radio 4':
+      return setStatesFiltered(filter(200, 500))
+    
+    case 'radio5':
+      return setStatesFiltered(filter(500, 500))
+
+    default:
+      return setStatesFiltered(productsApi);
     }
-    if (e.target.value === 'radio1') {
-      const filtered = productsApi.filter((product: IProducts) => product.priceNonMember >= 0 && product.priceNonMember <= 40);
-      setInfoPage((prevState) => ({ ...prevState, totalItems: filtered.length }));
-      setProducts(filtered);
-    }    
-    if (e.target.value === 'radio2') {
-      const filtered = productsApi.filter((product: IProducts) => product.priceNonMember >= 40 && product.priceNonMember <= 60);  
-      setInfoPage((prevState) => ({ ...prevState, totalItems: filtered.length }));
-      setProducts(filtered);     
-    }
-    if (e.target.value === 'radio3') {
-      const filtered = productsApi.filter((product: IProducts) => product.priceNonMember >= 100 && product.priceNonMember <= 200);
-      setInfoPage((prevState) => ({ ...prevState, totalItems: filtered.length })); 
-      setProducts(filtered);
-    }
-    if (e.target.value === 'radio4') {
-      const filtered = productsApi.filter((product: IProducts) => product.priceNonMember >= 200 && product.priceNonMember <= 500); 
-      setInfoPage((prevState) => ({ ...prevState, totalItems: filtered.length }));
-      setProducts(filtered);
-    }
-    if (e.target.value === 'radio5' ) {
-      const filtered = productsApi.filter((product: IProducts) => product.priceNonMember >= 500); 
-      setInfoPage((prevState) => ({ ...prevState, totalItems: filtered.length }));
-      setProducts(filtered);
-    }    
+  
   };
 
   return (
