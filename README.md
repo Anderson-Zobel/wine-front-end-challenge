@@ -23,8 +23,7 @@
 
 ## 👷‍♂️ Desenvolvimento:
 - Desafio Front-end realizado pela [Wine](https://www.wine.com.br)<br>
-- Realizado individualmente
-&ensp;[Anderson Zobel](https://github.com/Anderson-Zobel)<br>
+- Realizado individualmente por [Anderson Zobel](https://github.com/Anderson-Zobel)<br>
 
 
 ## 🏃 Habilidades
